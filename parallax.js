@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = canvas.width = 360;
 const CANVAS_HEIGHT = canvas.height = 450;
-let gameSpeed = 10;
+let gameSpeed = 5;
 
 const backgroundLayer1_1 = new Image();
 backgroundLayer1_1.src = './images/clouds_background_1.png';
@@ -55,10 +55,10 @@ class Layer {
     }
 }
 
-const layer4 = new Layer(backgroundLayer4_1, backgroundLayer4_2, 0.2);
-const layer3 = new Layer(backgroundLayer3_1, backgroundLayer3_2, 0.4);
-const layer2 = new Layer(backgroundLayer2_1, backgroundLayer2_2, 0.6);
-const layer1 = new Layer(backgroundLayer1_1, backgroundLayer1_2, 0.8);
+const layer4 = new Layer(backgroundLayer4_1, backgroundLayer4_2, 0.8);
+const layer3 = new Layer(backgroundLayer3_1, backgroundLayer3_2, 0.6);
+const layer2 = new Layer(backgroundLayer2_1, backgroundLayer2_2, 0.4);
+const layer1 = new Layer(backgroundLayer1_1, backgroundLayer1_2, 0.2);
 
 const gameObjects = [layer1, layer2, layer3, layer4];
 
