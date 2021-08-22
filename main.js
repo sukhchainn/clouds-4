@@ -5,7 +5,6 @@ function parallax(element, distance, speed) {
     // item.style.transform = `translateY(${distance * speed})px`;
     if (item.style.left == '') left = ((window.innerWidth/2) - (item.clientWidth/2));
     item.style.left = (left + distance* speed)+"px";
-    console.log(window.innerWidth - item.clientWidth);
 }
 
 window.addEventListener("mousemove", function() {
